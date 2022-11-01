@@ -5,6 +5,7 @@ main {
   position: relative;
   border-bottom-left-radius: 2%;
   border-bottom-right-radius: 2%;
+  z-index: 999;
 
   .shape1 {
     position: absolute;
