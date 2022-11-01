@@ -272,7 +272,7 @@ header#navbar .dropdown .dropdown-menu li {
 header#navbar .dropdown .dropdown-menu li:hover {
   text-indent: 2rem;
 }
-header#navbar .dropdown #drop-2:checked + .dropdown-menu {
+header#navbar .dropdown #drop-1:checked + .dropdown-menu {
   transform: translateX(0);
 }
 header#navbar ul li a {
@@ -310,23 +310,67 @@ header#navbar form button {
   font-style: 16px;
   border: none;
 }
-header#navbar .drop-down1 {
+header#navbar .dropdown-2 {
+  font-size: 28px;
+  display: block;
+}
+header#navbar .dropdown-2 .dropdown-menu {
+  position: absolute;
+  top: 5rem;
+  right: 10rem;
+  width: 150px;
+  height: 240px;
+  color: #fff;
+  background-color: #003459;
+  z-index: 9999;
+  transform: scale(0);
+  transition: transform 0.5s linear;
+}
+header#navbar .dropdown-2 .dropdown-menu ul li a {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 24px;
+  color: #fff;
+}
+header#navbar .dropdown-2 .dropdown-menu ul li a:active {
+  color: #f7dba7;
+}
+header#navbar .dropdown-2 .dropdown-menu ul form {
   position: relative;
 }
-header#navbar .drop-down1 label {
-  line-height: 50px;
-}
-header#navbar .drop-down1 ul {
-  position: absolute;
-  top: 1rem;
+header#navbar .dropdown-2 .dropdown-menu ul form i {
+  top: 0;
   left: 0;
-  width: 100px;
-  height: 150px;
-  background-color: #ff0;
-  z-index: 999;
+  line-height: 60px;
+  color: #00171f;
 }
-header#navbar .drop-down1 #drop1:checked + ul {
-  visibility: visible;
+header#navbar .dropdown-2 .dropdown-menu ul form button {
+  background-color: #f7dba7;
+}
+header#navbar .dropdown-2 .dropdown-menu .dropdown-close {
+  text-align: end;
+  display: block;
+  padding: 10px;
+  margin: 1rem;
+  color: #fff;
+}
+header#navbar .dropdown-2 .dropdown-menu li {
+  color: #fff;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 1rem;
+  transition: text-indent 0.3s ease-in;
+}
+header#navbar .dropdown-2 .dropdown-menu li:hover {
+  text-indent: 2rem;
+}
+header#navbar .dropdown-2 #drop-2:checked + .dropdown-menu {
+  transform: translateX(0);
+}
+@media (max-width: 992px) {
+  header#navbar .dropdown-2 {
+    display: none;
+  }
 }
 @media (max-width: 992px) {
   header#navbar .nav {
