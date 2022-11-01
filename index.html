@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/css/main.min.css" />
+    <title>Monito</title>
+  </head>
+  <body>
+    <main>
+      <img
+        src="./Monito-images/Shapes/showcase-1.svg"
+        alt="shapes"
+        width="635px"
+        height="635px"
+        class="shape1"
+      />
+      <header id="navbar">
+        <div class="container">
+          <div class="d-flex jc-between align-center row">
+            <div class="dropdown">
+              <label class="dropdown-title" for="drop-2"
+                ><i class="fa-solid fa-bars"></i
+              ></label>
+              <input type="checkbox" id="drop-2" hidden />
+              <div class="dropdown-menu">
+                <label class="dropdown-close" for="drop-2"
+                  ><i class="fa-solid fa-times fa-2x"></i
+                ></label>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Category</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li>
+                    <form action="/signup" class="d-flex jc-between column">
+                      <input type="text" placeholder="Search" />
+                      <i class="fa fa-search fa-1x" aria-hidden="true"></i>
+                      <button>Join the community</button>
+                    </form>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <img src="./Monito-images/icons/logo.png" alt="logo" />
+            <ul class="d-flex jc-between gap-2 nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Category</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <form action="/signup" class="d-flex jc-between nav">
+              <input type="text" placeholder="Search something here!" />
+              <i class="fa fa-search fa-1x" aria-hidden="true"></i>
+              <button>Join the community</button>
+            </form>
+            <div class="drop-down1 nav">
+              <label for="drop1">
+                Eng <i class="fa-solid fa-chevron-down"></i>
+              </label>
+              <input type="checkbox" name="drop" id="drop1" hidden />
+              <ul hidden>
+                <li>Eng</li>
+                <li>Ru</li>
+                <li>Uzb</li>
+              </ul>
+            </div>
+            <a href="#" class="search">
+              <i class="fa fa-search" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+      <section id="hero">
+        <div class="container">
+          <div class="d-flex jc-between align-center row">
+            <div class="half d-flex column">
+              <h1>One more friend</h1>
+              <h3>Thousands more fun!</h3>
+              <p>
+                Having a pet means you have more joy, a new friend, a happy
+                person who will always be with you to have fun. We have 200+
+                different pets that can meet your needs!
+              </p>
+              <div class="d-flex gap-1">
+                <a href="#" class="btn"
+                  >View Intro <i class="fa-regular fa-circle-play"></i
+                ></a>
+                <a href="#" class="btn btn-dark">Explore Now</a>
+              </div>
+            </div>
+            <div class="half">
+              <img
+                src="./Monito-images/Showcase.png"
+                alt="showcase"
+                class="showcasev"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section id="news">
+      <div class="container">
+        <div class="d-flex jc-between align-center">
+          <div class="news-txt">
+            <h4>Whats new?</h4>
+            <h3>Take a look at some of our pets</h3>
+          </div>
+          <a href="#" class="btn"
+            >View more <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="new">
+          <div class="pet-card card1 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-1.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card card2 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-2.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card d-flex card3 column">
+            <img
+              src="./Monito-images/Puppy/puppy-3.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card card4 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-4.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card card5 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-5.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card card6 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-6.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card card7 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-7.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+          <div class="pet-card card8 d-flex column">
+            <img
+              src="./Monito-images/Puppy/puppy-8.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="banner">
+      <div class="container">
+        <div class="d-flex jc-between align-center row">
+          <div class="half d-flex jc-center">
+            <img
+              src="./Monito-images/explore.png"
+              alt="showcase"
+              width="542px"
+              height="342px"
+            />
+          </div>
+          <div class="half d-flex column align-end">
+            <h3>One more friend</h3>
+            <h2>Thousands more fun!</h2>
+            <p class="text-end">
+              Having a pet means you have more joy, a new friend, a happy person
+              who will always be with you to have fun. We have 200+ different
+              pets that can meet your needs!
+            </p>
+            <div class="d-flex gap-1 jc-end">
+              <a href="#" class="btn"
+                >View Intro <i class="fa-regular fa-circle-play"></i
+              ></a>
+              <a href="#" class="btn btn-dark">Explore Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="container">
+        <div class="d-flex jc-between align-center">
+          <div class="pr-txt">
+            <h4>Hard to choose right products for your pets?</h4>
+            <h3>Our Products</h3>
+          </div>
+          <a href="#" class="btn"
+            >View more <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="product">
+          <div class="pet-card card1 d-flex column">
+            <img
+              src="./Monito-images/Products/product-8.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freeshoker.png" alt="free" />
+          </div>
+          <div class="pet-card card2 d-flex column">
+            <img
+              src="./Monito-images/Products/product-1.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freeshoker.png" alt="free" />
+          </div>
+          <div class="pet-card d-flex card3 column">
+            <img
+              src="./Monito-images/Products/product-2.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freecatfood.png" alt="free" />
+          </div>
+          <div class="pet-card card4 d-flex column">
+            <img
+              src="./Monito-images/Products/product-3.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freecatfood.png" alt="free" />
+          </div>
+          <div class="pet-card card5 d-flex column">
+            <img
+              src="./Monito-images/Products/product-4.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freeshoker.png" alt="free" />
+          </div>
+          <div class="pet-card card6 d-flex column">
+            <img
+              src="./Monito-images/Products/product-5.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freeshoker.png" alt="free" />
+          </div>
+          <div class="pet-card card7 d-flex column">
+            <img
+              src="./Monito-images/Products/product-6.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freecatfood.png" alt="free" />
+          </div>
+          <div class="pet-card card8 d-flex column">
+            <img
+              src="./Monito-images/Products/product-7.jpg"
+              width="264px"
+              height="264px"
+              alt="pets image"
+            />
+            <h3>MO231 - Pomeranian White</h3>
+            <ul class="d-flex">
+              <li class="for-border d-flex">
+                <p>Gene:</p>
+                <p>Male</p>
+              </li>
+              <li class="d-flex">
+                <p>Age:</p>
+                <p>02 Months</p>
+              </li>
+            </ul>
+            <h3>6.900.000 VND</h3>
+            <img src="./Monito-images/Products/freefood.png" alt="free" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="partners">
+      <div class="container">
+        <div class="partners-txt d-flex align-center jc-between">
+          <div class="text d-flex align-center">
+            <h4>Proud to be part of</h4>
+            <h3>Pet Sellers</h3>
+          </div>
+          <a href="#" class="btn"
+            >View all our sellers
+            <i class="fa fa-chevron-right" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="partners-logos d-flex row jc-between align-center">
+          <img
+            src="./Monito-images/Partners/partner-1.png"
+            alt="logos"
+            height="64px"
+            width="90px"
+          />
+          <img
+            src="./Monito-images/Partners/partner-2.png"
+            alt="logos"
+            height="114px"
+            width="114px"
+          />
+          <img
+            src="./Monito-images/Partners/partner-3.png"
+            alt="logos"
+            height="46px"
+            width="104px"
+          />
+          <img
+            src="./Monito-images/Partners/partner-4.png"
+            alt="logos"
+            height="62px"
+            width="92px"
+          />
+          <img
+            src="./Monito-images/Partners/partner-5.png"
+            alt="logos"
+            height="92px"
+            width="92px"
+          />
+          <img
+            src="./Monito-images/Partners/partner-6.png"
+            alt="logos"
+            height="92px"
+            width="102px"
+          />
+          <img
+            src="./Monito-images/Partners/partner-7.png"
+            alt="logos"
+            height="90px"
+            width="150px"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="adoption">
+      <div class="container">
+        <div class="d-flex jc-between align-center">
+          <div class="half d-flex column align-start text">
+            <h2 class="d-flex align-center">
+              Adoption <img src="./Monito-images/dog-footprint.svg" alt="dog" />
+            </h2>
+            <h3>We need help. so do they.</h3>
+            <p>
+              Having a pet means you have more joy, a new friend, a happy person
+              who will always be with you to have fun. We have 200+ different
+              pets that can meet your needs!
+            </p>
+            <div class="d-flex gap-1 jc-end">
+              <a href="#" class="btn btn-dark">Explore Now</a>
+              <a href="#" class="btn"
+                >View Intro <i class="fa-regular fa-circle-play"></i
+              ></a>
+            </div>
+          </div>
+          <div class="half d-flex jc-center">
+            <img src="./Monito-images/adoption.png" alt="showcase" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pet">
+      <div class="container">
+        <div class="pet-header d-flex jc-between align-center">
+          <div class="txt">
+            <h3>You already know ?</h3>
+            <h2>Useful pet knowledge</h2>
+          </div>
+          <a href="#" class="btn"
+            >View more <i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="cards d-flex jc-between align-center">
+          <div class="pet-card main-card">
+            <img
+              src="./Monito-images/knowledge/knowledge-1.jpg"
+              alt="smthing"
+            />
+            <a href="#" class="pet-btn">Pet Knowledge</a>
+            <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+            <p>
+              The Pomeranian, also known as the Pomeranian (Pom dog), is always
+              in the top of the cutest pets. Not only that, the small, lovely,
+              smart, friendly, and skillful circus dog breed.
+            </p>
+          </div>
+          <div class="pet-card">
+            <img
+              src="./Monito-images/knowledge/knowledge-2.jpg"
+              alt="smthing"
+            />
+            <a href="#" class="pet-btn">Pet Knowledge</a>
+            <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+            <p>
+              The Pomeranian, also known as the Pomeranian (Pom dog), is always
+              in the top of the cutest pets. Not only that, the small, lovely,
+              smart, friendly, and skillful circus dog breed.
+            </p>
+          </div>
+          <div class="pet-card">
+            <img
+              src="./Monito-images/knowledge/knowledge-3.jpg"
+              alt="smthing"
+            />
+            <a href="#" class="pet-btn">Pet Knowledge</a>
+            <h3>What is a Pomeranian? How to Identify Pomeranian Dogs</h3>
+            <p>
+              The Pomeranian, also known as the Pomeranian (Pom dog), is always
+              in the top of the cutest pets. Not only that, the small, lovely,
+              smart, friendly, and skillful circus dog breed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="first d-flex row jc-between align-center">
+          <h2>Register now so you don't miss our programs</h2>
+          <form action="/signin" class="d-flex row jc-between">
+            <input type="email" placeholder="Enter your Email" />
+            <button class="btn btn-dark last-btn">Subscribe Now</button>
+          </form>
+        </div>
+        <div class="footer-nav d-flex jc-between align-center row">
+          <ul class="d-flex jc-between gap-1 main-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="d-flex jc-between gap-1">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="end d-flex jc-between align-center row">
+          <p>&copy; 2022 Monito. All rights reserved.</p>
+          <img src="./Monito-images/icons/logo.png" alt="logo" />
+          <ul class="d-flex row jc-between gap-1">
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <ul class="hidden-ul d-flex column jc-center align-center" hidden>
+          <li><img src="./Monito-images/icons/logo.png" alt="logo" /></li>
+          <li class="d-flex row">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+          </li>
+          <li>&copy; 2022 Monito. All rights reserved.</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

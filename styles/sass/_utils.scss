@@ -1,0 +1,115 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (max-width: $xl) {
+    width: 820px;
+  }
+
+  @media (max-width: $lg) {
+    width: 768px;
+  }
+
+  @media (max-width: $md) {
+    width: 570px;
+  }
+
+  @media (max-width: $sm) {
+    width: 100%;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}
+
+.jc-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+
+.link-up {
+  color: $black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.link-cp {
+  color: $black;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.btn {
+  border: 2px solid $primary-blue;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+}
+.btn-dark {
+  background-color: $primary-blue;
+  color: $white;
+}
+.text-end {
+  text-align: right;
+}

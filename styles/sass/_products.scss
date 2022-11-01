@@ -1,0 +1,138 @@
+section#products {
+  padding: 4rem 0;
+  .pr-txt {
+    margin-bottom: 3rem;
+    h4 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: flex-end;
+      color: #000000;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      display: flex;
+      align-items: flex-end;
+      text-transform: capitalize;
+      color: $primary-blue;
+    }
+  }
+  a {
+    margin-bottom: 3rem;
+  }
+  .product {
+    display: grid;
+    grid-template-areas:
+      "bir ikki uch tort"
+      "besh olti yetti sakkiz";
+    row-gap: 1rem;
+    .pet-card {
+      padding: 0.5rem;
+      background-color: $white;
+      box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+      margin: 0 auto;
+      border-radius: 5%;
+      gap: 0.8rem;
+      img {
+        border-radius: 5%;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: flex-end;
+        color: #00171f;
+      }
+      ul {
+        li {
+          display: flex;
+          justify-content: space-between;
+          gap: 0.6rem;
+        }
+        .for-border {
+          padding-right: 1rem;
+          position: relative;
+          &::before {
+            content: "";
+            width: 4px;
+            height: 4px;
+            line-height: 15px;
+            align-self: center;
+            background-color: $grey;
+            position: absolute;
+            top: 5px;
+            left: 100%;
+            border-radius: 50%;
+          }
+          & + li {
+            padding-left: 1rem;
+          }
+        }
+      }
+    }
+    .card1 {
+      grid-area: bir;
+    }
+    .card2 {
+      grid-area: ikki;
+    }
+    .card3 {
+      grid-area: uch;
+    }
+    .card4 {
+      grid-area: tort;
+    }
+    .card5 {
+      grid-area: besh;
+    }
+    .card6 {
+      grid-area: olti;
+    }
+    .card7 {
+      grid-area: yetti;
+    }
+    .card8 {
+      grid-area: sakkiz;
+    }
+  }
+  @media (max-width: $lg) {
+    .product {
+      grid-template-areas:
+        "bir ikki"
+        "uch tort"
+        "besh olti"
+        "yetti sakkiz";
+      .card1 {
+        grid-area: bir;
+      }
+      .card2 {
+        grid-area: ikki;
+      }
+      .card3 {
+        grid-area: uch;
+      }
+      .card4 {
+        grid-area: tort;
+      }
+      .card5 {
+        grid-area: besh;
+      }
+      .card6 {
+        grid-area: olti;
+      }
+      .card7 {
+        grid-area: yetti;
+      }
+      .card8 {
+        grid-area: sakkiz;
+      }
+    }
+  }
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
