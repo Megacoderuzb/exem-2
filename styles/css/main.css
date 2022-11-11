@@ -1458,11 +1458,10 @@ section#adoption .container .btn-dark {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 9999;
-  background-color: transparent;
-  opacity: 100%;
+  visibility: hidden;
   -webkit-animation: opac 4s cubic-bezier(1, -0.02, 0.99, -0.02);
           animation: opac 4s cubic-bezier(1, -0.02, 0.99, -0.02);
+  z-index: 9981;
 }
 
 .round {
@@ -1516,44 +1515,54 @@ section#adoption .container .btn-dark {
   0% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   25% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   50% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   75% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   to {
     background-color: transparent;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
+    visibility: hidden;
   }
 }
 @keyframes opac {
   0% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   25% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   50% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   75% {
     background-color: antiquewhite;
     transform: translateX(0);
+    visibility: visible;
   }
   to {
     background-color: transparent;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
+    visibility: hidden;
   }
 }
 main {
