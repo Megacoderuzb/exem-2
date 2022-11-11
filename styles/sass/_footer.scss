@@ -106,6 +106,9 @@ footer#footer {
           all: unset;
         }
       }
+      .hidden-ul {
+        display: none;
+      }
     }
     .footer-nav {
       flex-direction: column;

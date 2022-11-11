@@ -1302,6 +1302,9 @@ footer#footer .container .end p {
   footer#footer .container .end p {
     all: unset;
   }
+  footer#footer .container .hidden-ul {
+    display: none;
+  }
   footer#footer .footer-nav {
     flex-direction: column;
     gap: 1rem;
